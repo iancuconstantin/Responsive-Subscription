@@ -1,5 +1,9 @@
 # Responsive-Subscription
 
+## What I`ve learned:
+
+- Implement a responsive component
+
 ## Tasks
 
 1. Implement your solution so it looks like the `mobile-design.jpg`.
