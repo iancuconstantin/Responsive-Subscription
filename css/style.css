@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    border: 0ch;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: "Karla";
+}
+.brd-top{
+    border-top: 15px solid #ffffff;
+    border-radius: 10px;
+}
+.brd-bottom1{
+    border-bottom: 15px solid hsl(179, 62%, 43%);
+    border-radius: 0px 0px 0px 15px; /* top left, top right, bottom right, bottom left */
+}
+.brd-bottom2{
+    border-bottom: 15px solid #67cbcb;
+    border-radius: 0px 0px 15px 0px; /* top left, top right, bottom right, bottom left */
+}
+
+
+/* 1st Section */
+
+body > div > div.col-sm-12.p-3 > div{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+body > div > div.col-sm-12.p-3{
+    background-color: white;
+}
+body > div > div.col-sm-12.p-3 > div > p:nth-child(1){
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 120%;
+}
+body > div > div.col-sm-12.p-3 > div > p:nth-child(2){
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+body > div > div.col-sm-12.p-3 > div > p:nth-child(3){
+    color: hsl(218, 22%, 67%);
+}
+
+
+/* 2nd Section */
+
+body > div > div:nth-child(2) > div{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+body > div > div:nth-child(2){
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding-top: 50px;
+}
+body > div > div:nth-child(2) > div > p:nth-child(2){
+    margin-bottom: 0px;
+}
+body > div > div:nth-child(2) > div > p:nth-child(1){
+    font-weight: 700;
+}
+body > div > div:nth-child(2) > div > p:nth-child(2) > span:nth-child(1){
+    font-size: 2rem;
+    font-weight: 700;
+}
+body > div > div:nth-child(2) > div > p:nth-child(2) > span:nth-child(2){
+    color: hsl(179, 63%, 64%);
+}
+
+body > div > div:nth-child(2) > div > p:nth-child(3){
+    color: hsl(179, 80%, 86%);
+}
+body > div > div:nth-child(2) > button{
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* 3rd Section */
+body > div > div:nth-child(3){
+    background-color: hsl(180, 49%, 60%);
+    color: white;
+    padding-top: 16px;
+}
+body > div > div:nth-child(3) > div > p:nth-child(1){
+    font-weight: 700;
+    font-size: 120%;
+}
+body > div > div:nth-child(3) > div > p:nth-child(2){
+    color: hsl(180, 71%, 86%);
+}
+body > div > div:nth-child(3) > div{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+/* bottom page */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+/* TOOLTIP */
+#tooltip {
+    background: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 4px;
+    display: none;
+}
+
+#tooltip[data-show] {
+    display: block;
+}
+
+#arrow,
+#arrow::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+}
+
+#arrow {
+    visibility: hidden;
+}
+
+#arrow::before {
+    visibility: visible;
+    content: '';
+    transform: rotate(45deg);
+}
+
+#tooltip[data-popper-placement^='top'] > #arrow {
+    bottom: -4px;
+}
+
+#tooltip[data-popper-placement^='bottom'] > #arrow {
+    top: -4px;
+}
+
+#tooltip[data-popper-placement^='left'] > #arrow {
+    right: -4px;
+}
+
+#tooltip[data-popper-placement^='right'] > #arrow {
+    left: -4px;
+}
+
+
+/* LINKS */
+#button > a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#button > a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#button > a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#button > a:active {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 575px) {
+    body > div {
+    max-width: 100%;
+    min-width: 95%;
+    }
+    body > div > div.col-sm-12.p-3 > div > p:nth-child(3){
+    line-height: 2;
+    }
+    body > div > div.col-sm-12.p-3 > div > p:nth-child(2){
+    padding-bottom: 15px;
+    }
+    .brd-bottom1{
+        border-bottom: 0px solid hsl(179, 62%, 43%);
+        border-radius: 0px; /* top left, top right, bottom right, bottom left */
+    }
+    .brd-bottom2{
+        border-bottom: 15px solid #67cbcb;
+        border-radius: 0px 0px 10px 10px; /* top left, top right, bottom right, bottom left */
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- displays site properly based on user's device -->
+    <style>
+      /* On screens that are 375px wide or less, the background color is blue */
+        
+    </style>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Frontend Mentor | Single Price Grid Component</title>
+  </head>
+  <body>
+    <div class="shadow row w-50 mx-auto brd-top my-5">
+      <!-- 1st SECTION -->
+      <div class="col-sm-12 p-3">
+        <div class="content">
+          <p>Join our community</p>
+          <p>30-day, hassle-free money back guarantee</p>
+          <p>Gain access to our full library of tutorials along with expert code reviews. Perfect for
+          any developers who are serious about honing their skills.</p>
+        </div>
+      </div>
+      <!-- 2nd SECTION -->
+      <div class="col-sm-6 p-3 brd-bottom1">
+        <div class="content">
+          <p>Monthly Subscription</p>
+          <p><span>&dollar;29</span> <span>per month</span></p>
+          <p>Full access for less than &dollar;1 a day</p>
+        </div>
+        <button id="button" type="button" class="btn d-grid p-2 col-10 mx-auto" aria-describedby="tooltip">
+          <a href="./form.html">Sign Up</a>
+        </button>
+        <div id="tooltip" role="tooltip">
+          Sign Up Now!
+          <div id="arrow" data-popper-arrow></div>
+        </div>
+      </div>
+      <!-- 3rd SECTION -->
+      <div class="col-sm-6 p-3 brd-bottom2">
+        <div class="content">
+          <p>Why Us</p>
+          <p>Tutorials by industry experts<br>
+          Peer &amp; expert code review<br>
+          Coding exercises<br>
+          Access to our GitHub repos<br> 
+          Community forum <br>
+          Flashcard decks<br>
+          New videos every week</p>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/iancuconstantin">Constantin</a>.
+      </p>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

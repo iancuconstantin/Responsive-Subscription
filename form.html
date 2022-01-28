@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <style>
+        /* On screens that are 375px wide or less */
+        @media screen and (max-width: 375px) {
+            body > div {
+            max-width: 100%;
+            min-width: 95%;
+            }
+            body > div > div.col-sm-12.p-3 > div > p:nth-child(3){
+            line-height: 2;
+            }
+            body > div > div.col-sm-12.p-3 > div > p:nth-child(2){
+            padding-bottom: 15px;
+            }
+        }
+    </style>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/form.css">
+    
+</head>
+<body>
+    <div class="shadow p-3 mb-5 bg-body rounded row d-flex w-50 mx-auto my-5 container border" >
+    <form  id="myForm">
+        <!-- NAME -->
+        <h1><i class="far fa-smile"></i> Hello</h1>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+            <div class="form-floating mb-3" id="name">
+                <input type="text" class="form-control" id="floatingInput" placeholder="User Name" pattern="^([A-Z][a-z]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*)$" title="Folositi litere si majuscule" required>
+                <label for="floatingInput">Full Name</label>
+            </div>
+        </div>
+        <!-- BIRTH DATE -->
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-alt"></i></span>
+            
+            
+            <div class="form-floating mb-3" id="name">
+                <input id="pickeddate" type="date" class="form-control" id="floatingInput" placeholder="DD/MM/YYYY" title="Introduceti data nasterii" required>
+                <label for="floatingInput">DD/MM/YYYY</label>
+            </div>
+        </div>
+
+
+        <!-- BILLING ADRESS -->
+            <!-- JUDET -->
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class="fas fa-map-pin"></i></i></span>
+            <div class="form-floating mb-3" id="judet-select">
+                <select class="form-select" id="judetul" aria-label="Judetul" title="Selectati judetul" required>
+                    <option selected></option>
+                    <option value="Alba">Alba</option>
+                    <option value="Arad">Arad</option>
+                    <option value="Arges">Arges</option>
+                    <option value="Bacau">Bacau</option>
+                    <option value="Bihor">Bihor</option>
+                    <option value="Bistrita-Nasaud">Bistrita-Nasaud</option>
+                    <option value="Botosani">Botosani</option>
+                    <option value="Braila">Braila</option>
+                    <option value="Brasov">Brasov</option>
+                    <option value="Bucuresti">Bucuresti</option>
+                    <option value="Buzau">Buzau</option>
+                    <option value="Calarasi">Calarasi</option>
+                    <option value="Caras-Severin">Caras-Severin</option>
+                    <option value="Cluj">Cluj</option>
+                    <option value="Constanta">Constanta</option>
+                    <option value="Covasna">Covasna</option>
+                    <option value="Dimbovita">Dimbovita</option>
+                    <option value="Dolj">Dolj</option>
+                    <option value="Galati">Galati</option>
+                    <option value="Gorj">Gorj</option>
+                    <option value="Giurgiu">Giurgiu</option>
+                    <option value="Harghita">Harghita</option>
+                    <option value="Hunedoara">Hunedoara</option>
+                    <option value="Ialomita">Ialomita</option>
+                    <option value="Iasi">Iasi</option>
+                    <option value="Ilfov">Ilfov</option>
+                    <option value="Maramures">Maramures</option>
+                    <option value="Mehedinti">Mehedinti</option>
+                    <option value="Mures">Mures</option>
+                    <option value="Neamt">Neamt</option>
+                    <option value="Olt">Olt</option>
+                    <option value="Prahova">Prahova</option>
+                    <option value="Salaj">Salaj</option>
+                    <option value="Satu Mare">Satu Mare</option>
+                    <option value="Sibiu">Sibiu</option>
+                    <option value="Suceava">Suceava</option>
+                    <option value="Teleorman">Teleorman</option>
+                    <option value="Timis">Timis</option>
+                    <option value="Tulcea">Tulcea</option>
+                    <option value="Vaslui">Vaslui</option>
+                    <option value="Vilcea">Vilcea</option>
+                    <option value="Vrancea">Vrancea</option>
+                </select>
+                <label for="judetul">Judetul</label>
+            </div>
+        </div>
+
+            <!-- ORAS -->
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class="fas fa-map-pin"></i></span>
+            <div class="form-floating mb-3" id="oras-select">
+                <input class="form-control" id="oras" type="text" placeholder="ORAS" title="Folositi litere si majuscule" pattern="^([A-Z][a-z]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*)$" required />
+                <label for="oras">ORAS</label>
+                <div class="invalid-feedback" data-sb-feedback="oras:required">ORAS is required.</div>
+            </div>
+        </div>
+
+            <!-- STRADA & NUMAR -->
+            
+            <div class="input-group mb-3" id="str">
+                <select class="form-select " id="strada" aria-label="Strada">
+                    <option value="Str.">Str.</option>
+                    <option value="Bld.">Bld.</option>
+                    <option value="Ale.">Ale.</option>
+                    <option value="Intr.">Intr.</option>
+                    <option value=""></option>
+                </select>
+                <input type="text" class="form-control" title="Folositi litere si majuscule" pattern="^([A-Z][a-z]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*)$" required>
+            </div>
+            <div class="input-group mb-3" id="nr">
+                <span class="input-group-text" id="addon-wrapping">Nr.</span>
+                <input type="number" min="1" class="form-control" placeholder="Numar" aria-label="Numar" aria-describedby="addon-wrapping" title="Introduceti numarul strazii" required>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <input onclick="myFunction()" type="submit" id="button" class="btn d-grid p-2 col-6 mx-auto">
+    </form>
+    </div>
+
+<!-- FOOTER SECTION -->
+<footer>
+    <p class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a>
+    . Coded by <a href="https://github.com/iancuconstantin">Constantin</a>.
+    </p>
+</footer>
+
+
+
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/da0ea1e47f.js" crossorigin="anonymous"></script>
+<!-- SUBMIT -->
+<script src="./form.js"></script>
+</body>
+</html>

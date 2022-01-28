@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    border: 0ch;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: "Karla";
+}
+.container{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: hsl(218, 22%, 67%);
+}
+.border{
+    border-top: 15px solid #ffffff;
+    border-bottom: 15px solid #ffffff;
+    border-radius: 10px;
+}
+h1{
+    color: hsl(179, 62%, 43%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#judet-select, #oras-select, #name{
+    flex: 1;
+}
+
+#basic-addon1{
+    height: 58px;
+}
+
+#floatingInput, #judetul, #oras, .form-control{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#strada{
+    max-width:fit-content;
+    background-color: #e9ecef;
+}
+#str, #nr{
+    margin-bottom: 2rem !important;
+}
+
+
+/* submit-button */
+#button{
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+/* bottom page */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+
+/* LINKS */
+#button > a:link {
+    text-decoration: none;
+}
+
+#button > a:visited {
+    text-decoration: none;
+}
+
+#button > a:hover {
+    text-decoration: underline;
+}
+
+#button > a:active {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 575px) {
+    body > div {
+    max-width: 100%;
+    min-width: 95%;
+    }
+    body > div > div.col-sm-12.p-3 > div > p:nth-child(3){
+    line-height: 2;
+    }
+    body > div > div.col-sm-12.p-3 > div > p:nth-child(2){
+    padding-bottom: 15px;
+    }
+    .brd-bottom1{
+        border-bottom: 0px solid hsl(179, 62%, 43%);
+        border-radius: 0px; /* top left, top right, bottom right, bottom left */
+    }
+    .brd-bottom2{
+        border-bottom: 15px solid #67cbcb;
+        border-radius: 0px 0px 10px 10px; /* top left, top right, bottom right, bottom left */
+    }
+}
